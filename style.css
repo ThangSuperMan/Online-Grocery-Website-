@@ -126,6 +126,7 @@ html {
     color: var(--black);
 }
 
+
 .header-2 .navbar a:hover{
     background: var(--green);
     color: #fff;
@@ -440,6 +441,11 @@ html {
         background: var(--black); 
         padding: 1rem 2rem; 
         display: none;
+    }
+
+    /* ta phai ghi class .active sat voi class .navbar */
+    .header-2 .navbar.active {
+     display: block;
     }
 
     .header-2 .navbar a{
