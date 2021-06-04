@@ -292,6 +292,8 @@ html {
     height: 20rem;
 }
 
+/* code for discount */
+
 .product .box-container .box .discount {
     position: absolute;
     top: 1rem; left: 1rem;
@@ -376,6 +378,61 @@ html {
     display: block;
 }
 
+/* CODE FOR DEAL */
+.deal {
+    background: url("images/deal-bg.jpg") no-repeat;
+    background-position: center;
+    /* lấy hết content of image */
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.deal .content  {
+    max-width: 50rem;
+}
+
+.deal .content .title {
+    font-size: 4rem;
+    color: var(--black); 
+}
+
+.deal .content p {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: #333;
+}
+
+.deal .content .count-down {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 0;  
+}
+
+
+.deal .content .count-down .box {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3); 
+}
+
+.deal .content .count-down .box h3 {
+    color: var(--black);
+    background-color: #fff;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    font-size: 5rem;
+}
+
+.deal .content .count-down .box span{
+    /* setting span to block because ta muốn nó có độ rộng 100% cha chứa nó */
+    display: block;
+    background-color: var(--black);
+    color: #fff;
+    width: 100%;
+    padding: .5rem;
+    font-size: 2rem;
+}
 
 
 
@@ -408,8 +465,7 @@ html {
 
 
 
-
-/* media queries */
+/* MEDIA QUERIES */
 @media(max-width:1200px){
     html {
         /* 55% = 8.8px */
